@@ -9,21 +9,137 @@
 .bus {
 	width: 625px;
 	height: 250px;
-	background: rgb(233 205 50);
+	background: #ffb640;
 	position: absolute;
 	top: 120px;
 	left: 50px;
-	border-radius: 20px 100px 20px 20px;
+	border-radius: 20px 60px 20px 20px;
+	outline: 6px solid brown;
+}
+
+.frontwindow {
+	width: 29px;
+	height: 130px;
+	background: #2cbdff;
+	position: absolute;
+	top: 58px;
+	right: 1px;
+	border-radius: 3px 3px 1px 15px;
+	outline: 6px solid brown;
+
+}
+
+.backwindow {
+	width: 35px;
+	height: 70px;
+	background: #2cbdff;
+	position: absolute;
+	top: 35px;
+	left: 1px;
+	border-radius: 3px 12px 12px 3px;
+	outline: 6px solid brown;
+}
+
+.mirror {
+	width: 115px;
+	height: 15px;
+	background: #ffb640;
+	position: absolute;
+	top: 35px;
+	right: -66px;
+	border-radius: 1px 20px 32px 8px;
+	;
+	outline: 6px solid brown;
+}
+
+.mirrorGlass {
+	width: 15px;
+	height: 48px;
+	background: #ffb640;
+	position: absolute;
+	top: 0px;
+	right: -10px;
+	border-radius: 1px 20px 32px 8px;
+	outline: 6px solid brown;
+}
+
+.top1 {
+	width: 130px;
+	height: 20px;
+	background: #ffb640;
+	position: absolute;
+	top: -27px;
+	left: 88px;
+	border-radius: 12px 12px 2px 2px;
+	outline: 4px solid brown;
+}
+
+.top2 {
+	width: 130px;
+	height: 20px;
+	background: #ffb640;
+	;
+	position: absolute;
+	top: -27px;
+	left: 385px;
+	border-radius: 12px 12px 2px 2px;
+	outline: 4px solid brown;
+}
+
+.indicator {
+	width: 12px;
+	height: 35px;
+	background: #ee3c2f;
+	position: absolute;
+	top: 120px;
+	left: 0px;
+	border-radius: 4px 6px 8px 1px;
+	outline: 6px solid brown;
+}
+
+.indicator::before {
+	content: '';
+	width: 12px;
+	height: 35px;
+	background: #ee3c2f;
+	position: absolute;
+	top: 45px;
+	left: 0px;
+	border-radius: 4px 6px 8px 1px;
+	outline: 6px solid brown;
+}
+
+.driverWindow {
+	width: 70px;
+	height: 85px;
+	background: #fff;
+	border-radius: 5px 5px 0px 0px;
+	position: absolute;
+	top: 35px;
+	right: 60px;
+	outline: 6px solid brown;
 }
 
 .door {
 	width: 70px;
-	height: 140px;
+	height: 50px;
 	background: #fff;
-	border-radius: 5px;
+	border-radius: 0px 0px 8px 42px;
 	position: absolute;
-	top: 35px;
-	right: 60px;
+	top: 97px;
+	right: 0px;
+	outline: 6px solid brown;
+}
+
+.doorLock {
+	width: 3px;
+	height: 5px;
+	background: #521515;
+	border-radius: 1px;
+	position: absolute;
+	top: 14px;
+	right: 52px;
+	outline: 4px solid brown;
 }
 
 .window {
@@ -34,16 +150,18 @@
 	position: absolute;
 	top: 35px;
 	right: 170px;
+	outline: 6px solid brown;
 }
 
 .window::after {
 	content: "";
 	width: 70px;
 	height: 70px;
-	background: #fff;;
+	background: #fff;
 	border-radius: 5px;
 	position: absolute;
 	right: 100px;
+	outline: 6px solid brown;
 }
 
 .window::before {
@@ -54,8 +172,10 @@
 	border-radius: 5px;
 	position: absolute;
 	right: 200px;
+	outline: 6px solid brown;
 }
-.Window2{
+
+.Window2 {
 	width: 70px;
 	height: 70px;
 	background: #fff;
@@ -63,5 +183,28 @@
 	position: absolute;
 	top: 35px;
 	right: 470px;
-
+	outline: 6px solid brown;
 }
+
+.cover {
+	width: 80px;
+	height: 82px;
+	background: #6b174e;
+	border-radius: 210px;
+	position: absolute;
+	top: 208px;
+	left: 80px;
+}
+
+.cover::after {
+	content: "";
+	width: 80px;
+	height: 82px;
+	background: #6b174e;
+	border-radius: 210px;
+	position: absolute;
+	top: 0px;
+	left: 350px;
+}
+
+
