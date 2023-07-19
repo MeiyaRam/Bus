@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.scss';
 
-const Windows = (context) =>
+const Windows = () =>
 	<div>
 		<div className="frontWindow"/>
 		<div className="backWindow"/>

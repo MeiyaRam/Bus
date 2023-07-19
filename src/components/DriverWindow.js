@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.scss';
 
-const DriverWindow = (context) =>
+const DriverWindow = () =>
 	<div className="driverWindow">
 		<div className="door">
 			<div className="doorLock"/>

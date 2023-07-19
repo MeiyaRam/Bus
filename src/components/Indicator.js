@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.scss';
 
-const Indicator = (context) =>
+const Indicator = () =>
 	<div className="indicator"/>
 	;
 

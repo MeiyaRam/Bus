@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.scss';
 
-const Mirror = (context) =>
+const Mirror = () =>
 	<div>
 		<div className="mirrorHandle">
 			<div className="mirror"/>
