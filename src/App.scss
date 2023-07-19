@@ -17,7 +17,7 @@
 	outline: 6px solid brown;
 }
 
-.frontwindow {
+.frontWindow {
 	width: 29px;
 	height: 130px;
 	background: #2cbdff;
@@ -29,7 +29,7 @@
 
 }
 
-.backwindow {
+.backWindow {
 	width: 35px;
 	height: 70px;
 	background: #2cbdff;
@@ -40,7 +40,7 @@
 	outline: 6px solid brown;
 }
 
-.mirror {
+.mirrorHandle {
 	width: 115px;
 	height: 15px;
 	background: #ffb640;
@@ -52,7 +52,7 @@
 	outline: 6px solid brown;
 }
 
-.mirrorGlass {
+.mirror {
 	width: 15px;
 	height: 48px;
 	background: #ffb640;
@@ -63,7 +63,7 @@
 	outline: 6px solid brown;
 }
 
-.top1 {
+.topDesign {
 	width: 130px;
 	height: 20px;
 	background: #ffb640;
@@ -74,14 +74,13 @@
 	outline: 4px solid brown;
 }
 
-.top2 {
+.topDesign::after {
+	content:'';
 	width: 130px;
 	height: 20px;
 	background: #ffb640;
-	;
 	position: absolute;
-	top: -27px;
-	left: 385px;
+	left: 315px;
 	border-radius: 12px 12px 2px 2px;
 	outline: 4px solid brown;
 }

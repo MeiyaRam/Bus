@@ -3,13 +3,12 @@ import '../App.scss';
 
 const Bus = (context) =>
 	<div className="bus">
-		<div className="frontwindow"/>
-		<div className="backwindow"/>
-		<div className="mirror">
-			<div className="mirrorGlass"/>
+		<div className="frontWindow"/>
+		<div className="backWindow"/>
+		<div className="mirrorHandle">
+			<div className="mirror"/>
 		</div>
-		<div className="top1"/>
-		<div className="top2"/>
+		<div className="topDesign"/>
 		<div className="indicator"/>
 		<div className="driverWindow">
 			<div className="door">
