@@ -3,12 +3,12 @@ import '../App.scss';
 
 const Cover = () =>
 	<div>
-		<div className="leftCover">
+		<div className="cover">
 			<div className="tire">
 				<div className="innerTire"/>
 			</div>
 		</div>
-		<div className="rightCover">
+		<div className="cover" style={ { left: '66%' } }>
 			<div className="tire">
 				<div className="innerTire"/>
 			</div>
