@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.scss';
+import { map, range } from '@laufire/utils/collection';
 
 const Windows = (context) => {
 	const { config: { windowCount, windowLeft }} = context;
@@ -7,13 +7,12 @@ const Windows = (context) => {
 	return <div>
 		<div className="frontWindow"/>
 		<div className="backWindow"/>
-		{windowCount.map((window, i) =>
+		{map(range(1, windowCount), (count, i) =>
 			<div
 				key={ i }
 				className="window"
-				style={ { left: `${ windowLeft * window }%` } }
+				style={ { left: `${ windowLeft * count }%` } }
 			/>)}
-
 	</div>;
 };
 

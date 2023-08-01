@@ -1,18 +1,21 @@
+import { map } from '@laufire/utils/collection';
+import { values } from '@laufire/utils/lib';
 import React from 'react';
-import '../App.scss';
 
-const Cover = () =>
-	<div>
-		<div className="cover">
-			<div className="tire">
-				<div className="innerTire"/>
-			</div>
-		</div>
-		<div className="cover" style={ { left: '66%' } }>
-			<div className="tire">
-				<div className="innerTire"/>
-			</div>
-		</div>
-	</div>;
+const Cover = (context) => {
+	const { config: { covers }} = context;
+
+	return (
+		values(map(covers, (cover, index) =>
+			<div
+				key={ index }
+				className="cover"
+				style={ { left: `${ cover.left }px` } }
+			>
+				<div className="tire">
+					<div className="innerTire"/>
+				</div>
+			</div>)));
+};
 
 export default Cover;

@@ -1,13 +1,16 @@
 import React from 'react';
-import '../App.scss';
+import { map, values } from '@laufire/utils/collection';
 
-const Indicator = () =>
-	<div>
-		<div className="indicator"/>
-		<div
-			className="indicator"
-			style={ { top: '70%' } }
-		/>
-	</div>;
+const Indicator = (context) => {
+	const { config: { indicators }} = context;
+
+	return (
+		values(map(indicators, (indicator, index) =>
+			<div
+				key={ index }
+				className="indicator"
+				style={ { top: `${ indicator.top }%` } }
+			/>)));
+};
 
 export default Indicator;
