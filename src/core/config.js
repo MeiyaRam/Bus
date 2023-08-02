@@ -1,3 +1,8 @@
+import firstImg from '../images/people1.gif';
+import secImg from '../images/people2.gif';
+import thirdImg from '../images/people3.gif';
+import fourthImg from '../images/people4.gif';
+
 const config = {
 	windowCount: 5,
 	windowLeft: 15.5,
@@ -15,6 +20,9 @@ const config = {
 	},
 	roadLines: 13,
 	lineLeft: 8,
+	windowImages: [
+		firstImg, secImg, thirdImg, fourthImg,
+	],
 
 };
 

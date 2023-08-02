@@ -89,7 +89,8 @@ body{
 .driverWindow {
 	width: 11.4%;
 	height: 33%;
-	background: #fff;
+	background-image:url('./images/driver2.gif');
+	background-size: 100% 100%;
 	border-radius: 5px 5px 0px 0px;
 	position: absolute;
 	top: 15%;
@@ -135,7 +136,7 @@ body{
 	background: #6b174e;
 	border-radius: 150px 150px 0 0;
 	position: absolute;
-	top: 138px;
+	top: 124px;
 	left: 68px;
 }
 
@@ -182,7 +183,7 @@ body{
 	left:0%;
 }
 
-
+/*
 @keyframes rotate {
 	0% {
 		transform: rotate(0deg);
@@ -201,4 +202,4 @@ body{
 	100% {
 		transform: translate(1000px);
 	}
-}
+}*/
