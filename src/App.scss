@@ -5,13 +5,15 @@
 		font-weight: bold;
 	}
 }
-
+body{
+	overflow:hidden;
+}
 .bus {
 	width: 32%;
 	height: 26%;
 	background: #ffb640;
 	position: absolute;
-	top: 15%;
+	top: 35%;
 	left: 1%;
 	border-radius: 6%;
 	outline: 6px solid brown;
@@ -127,7 +129,7 @@
 	outline: 6px solid brown;
 }
 
-.cover{
+.cover {
 	width: 75px;
 	height: 39px;
 	background: #6b174e;
@@ -136,6 +138,7 @@
 	top: 138px;
 	left: 68px;
 }
+
 .tire {
 	width: 30px;
 	height: 30px;
@@ -157,23 +160,45 @@
 	top: -1px;
 	left: -1px;
 	outline: 6px solid #6b174e;
-
 }
-@keyframes rotate{
-	0%{
+
+.road {
+	width: 100%;
+	height: 40%;
+	position: absolute;
+	background-color: #525252;
+	top: 47%;
+	bottom: 0%;
+	overflow:hidden;
+}
+
+.roadLines {
+	width: 6%;
+	height: 4%;
+	border: 0px solid black;
+	background: #fff;
+	position: absolute;
+	top: 47%;
+	left:0%;
+}
+
+
+@keyframes rotate {
+	0% {
 		transform: rotate(0deg);
 	}
 
-	100%{
-		transform:rotate(360deg);
+	100% {
+		transform: rotate(360deg);
 	}
 }
 
-	@keyframes bus{
-	0%{
-		transform:translate(0px);
+@keyframes bus {
+	0% {
+		transform: translate(0px);
 	}
-	100%{
-		transform:translate(1000px);
+
+	100% {
+		transform: translate(1000px);
 	}
 }

@@ -13,6 +13,8 @@ const config = {
 		x: { left: '68' },
 		y: { left: '310' },
 	},
+	roadLines: 13,
+	lineLeft: 8,
 
 };
 
